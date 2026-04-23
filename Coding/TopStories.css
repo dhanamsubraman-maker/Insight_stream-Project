@@ -1,0 +1,104 @@
+.top-stories-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .top-stories-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0d253f;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  
+  .top-stories-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 22px;
+    margin-bottom: 30px;
+  }
+  
+  .top-story-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgb(13 37 63 / 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    outline-offset: 4px;
+  }
+  
+  .top-story-item:focus,
+  .top-story-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgb(13 37 63 / 0.15);
+    outline: none;
+  }
+  
+  .top-story-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+    flex-shrink: 0;
+  }
+  
+  .top-story-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a2733;
+    padding: 12px 15px;
+    flex-grow: 1;
+    line-height: 1.3;
+    user-select: none;
+  }
+  
+  .top-story-title:hover {
+    text-decoration: underline;
+  }
+  
+  .top-stories-btn {
+    display: block;
+    margin: 0 auto 40px auto;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgb(0 188 212 / 0.3);
+  }
+  
+  .top-stories-btn:hover,
+  .top-stories-btn:focus {
+    background-color: #0097a7;
+    outline: none;
+    box-shadow: 0 6px 18px rgb(0 151 167 / 0.5);
+  }
+  
+  .top-stories-spinner {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 40px 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .top-stories-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .top-story-image {
+      height: 180px;
+    }
+  }
+  

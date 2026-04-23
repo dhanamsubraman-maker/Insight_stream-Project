@@ -1,0 +1,58 @@
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #1a2733;
+  }
+  
+  /* Common styles for each section */
+  .home-section {
+    margin-bottom: 70px;
+    padding: 0 10px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 8px 28px rgb(0 0 0 / 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .home-section:hover,
+  .home-section:focus-within {
+    box-shadow: 0 12px 48px rgb(0 0 0 / 0.1);
+  }
+  
+  /* Specific section tweaks */
+  .top-stories-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .articles-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .newsletter-section {
+    padding: 50px 30px;
+    background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+    color: #fff;
+    box-shadow: 0 12px 30px rgb(0 151 167 / 0.4);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .home {
+      padding: 20px 15px 40px;
+    }
+  
+    .home-section {
+      margin-bottom: 50px;
+      padding: 20px 15px;
+    }
+  
+    .newsletter-section {
+      padding: 35px 20px;
+    }
+  }
+  
